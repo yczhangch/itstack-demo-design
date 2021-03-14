@@ -15,7 +15,7 @@ public class ApiTest {
 
         // 1. 优惠券
         ICommodity commodityService_1 = storeFactory.getCommodityService(1);
-        commodityService_1.sendCommodity("10001", "EGM1023938910232121323432", "791098764902132", null);
+        commodityService_1.sendCommodity("10001", "Egm1023938910232121323432", "791098764902132", null);
 
         // 2. 实物商品
         ICommodity commodityService_2 = storeFactory.getCommodityService(2);

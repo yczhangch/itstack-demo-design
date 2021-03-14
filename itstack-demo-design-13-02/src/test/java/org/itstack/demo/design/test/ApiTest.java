@@ -15,16 +15,16 @@ import java.util.Date;
 
 public class ApiTest {
 
-    private Logger logger = LoggerFactory.getLogger(ApiTest.class);
+    private final Logger logger = LoggerFactory.getLogger(ApiTest.class);
 
     @Test
     public void test_AuthLink() throws ParseException {
         AuthLink authLink = new Level3AuthLink("1000013", "王工")
                 .appendNext(new Level2AuthLink("1000012", "张经理")
                         .appendNext(new Level1AuthLink("1000011", "段总")));
-
+        System.out.println("1111111111");
         logger.info("测试结果：{}", JSON.toJSONString(authLink.doAuth("小傅哥", "1000998004813441", new Date())));
-
+        System.out.println("22222");
         // 模拟三级负责人审批
         AuthService.auth("1000013", "1000998004813441");
         logger.info("测试结果：{}", "模拟三级负责人审批，王工");

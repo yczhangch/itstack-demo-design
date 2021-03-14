@@ -2,9 +2,14 @@ package org.itstack.demo.design.store;
 
 import java.util.Map;
 
+/**
+ * @author My
+ */
 public interface ICommodity {
 
     /**
+     * 发放奖品
+     *
      * @param uId         用户id
      * @param commodityId 奖品id
      * @param bizId       业务id

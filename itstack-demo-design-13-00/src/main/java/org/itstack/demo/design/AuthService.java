@@ -8,17 +8,28 @@ import java.util.concurrent.ConcurrentHashMap;
  * 模拟审核服务
  * 1. auth          审核流程
  * 2. queryAuthInfo 查询审核信息(时间)
+ *
+ * @author My
  */
 public class AuthService {
 
-    private static Map<String, Date> authMap = new ConcurrentHashMap<String, Date>();
+    private static final Map<String, Date> AUTH_MAP = new ConcurrentHashMap<>();
 
+    /**
+     * 查询审核结果
+     */
     public static Date queryAuthInfo(String uId, String orderId) {
-        return authMap.get(uId.concat(orderId));
+        return AUTH_MAP.get(uId.concat(orderId));
     }
 
+    /**
+     * 处理审核结果
+     *
+     * @param uId
+     * @param orderId
+     */
     public static void auth(String uId, String orderId) {
-        authMap.put(uId.concat(orderId), new Date());
+        AUTH_MAP.put(uId.concat(orderId), new Date());
     }
 
 }

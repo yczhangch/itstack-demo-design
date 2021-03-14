@@ -13,6 +13,7 @@ import org.itstack.demo.design.store.impl.GoodsCommodityService;
 public class StoreFactory {
 
     public ICommodity getCommodityService(Integer commodityType) {
+        // 如果是spring，会注入这些实例，直接return，不用new
         if (null == commodityType) {
             return null;
         }

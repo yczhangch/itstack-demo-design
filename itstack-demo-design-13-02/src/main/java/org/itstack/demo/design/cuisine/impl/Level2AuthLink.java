@@ -8,6 +8,7 @@ import java.text.ParseException;
 import java.util.Date;
 
 /**
+ * 审核实现类2
  * 二级负责人
  */
 public class Level2AuthLink extends AuthLink {
@@ -19,6 +20,7 @@ public class Level2AuthLink extends AuthLink {
         super(levelUserId, levelUserName);
     }
 
+    @Override
     public AuthInfo doAuth(String uId, String orderId, Date authDate) {
         Date date = AuthService.queryAuthInfo(levelUserId, orderId);
         if (null == date) {

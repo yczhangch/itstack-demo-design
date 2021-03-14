@@ -5,9 +5,12 @@ import org.itstack.demo.design.RedisUtils;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author My
+ */
 public class CacheServiceImpl implements CacheService {
 
-    private RedisUtils redisUtils = new RedisUtils();
+    private final RedisUtils redisUtils = new RedisUtils();
 
     @Override
     public String get(String key) {

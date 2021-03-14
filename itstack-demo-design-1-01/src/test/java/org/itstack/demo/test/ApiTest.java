@@ -24,7 +24,7 @@ public class ApiTest {
         AwardReq req01 = new AwardReq();
         req01.setuId("10001");
         req01.setAwardType(1);
-        req01.setAwardNumber("EGM1023938910232121323432");
+        req01.setAwardNumber("Egm1023938910232121323432");
         req01.setBizId("791098764902132");
         AwardRes awardRes01 = prizeController.awardToUser(req01);
 

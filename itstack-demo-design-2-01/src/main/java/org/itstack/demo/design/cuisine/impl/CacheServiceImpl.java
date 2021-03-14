@@ -1,20 +1,24 @@
 package org.itstack.demo.design.cuisine.impl;
 
 import org.itstack.demo.design.RedisUtils;
-import org.itstack.demo.design.matter.EGM;
-import org.itstack.demo.design.matter.IIR;
+import org.itstack.demo.design.matter.Egm;
+import org.itstack.demo.design.matter.Iir;
 import org.itstack.demo.design.CacheService;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author My
+ */
 public class CacheServiceImpl implements CacheService {
 
-    private RedisUtils redisUtils = new RedisUtils();
+    private final RedisUtils redisUtils = new RedisUtils();
 
-    private EGM egm = new EGM();
+    private final Egm egm = new Egm();
 
-    private IIR iir = new IIR();
+    private final Iir iir = new Iir();
 
+    @Override
     public String get(String key, int redisType) {
 
         if (1 == redisType) {
@@ -28,6 +32,7 @@ public class CacheServiceImpl implements CacheService {
         return redisUtils.get(key);
     }
 
+    @Override
     public void set(String key, String value, int redisType) {
 
         if (1 == redisType) {
@@ -43,6 +48,7 @@ public class CacheServiceImpl implements CacheService {
         redisUtils.set(key, value);
     }
 
+    @Override
     public void set(String key, String value, long timeout, TimeUnit timeUnit, int redisType) {
 
         if (1 == redisType) {
@@ -58,6 +64,7 @@ public class CacheServiceImpl implements CacheService {
         redisUtils.set(key, value, timeout, timeUnit);
     }
 
+    @Override
     public void del(String key, int redisType) {
 
         if (1 == redisType) {

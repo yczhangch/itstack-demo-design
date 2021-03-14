@@ -11,9 +11,9 @@ import java.util.concurrent.TimeUnit;
  * 模拟集群2
  * @author My
  */
-public class IIR {
+public class Iir {
 
-    private final Logger logger = LoggerFactory.getLogger(IIR.class);
+    private final Logger logger = LoggerFactory.getLogger(Iir.class);
 
     private final Map<String, String> dataMap = new ConcurrentHashMap<>();
 

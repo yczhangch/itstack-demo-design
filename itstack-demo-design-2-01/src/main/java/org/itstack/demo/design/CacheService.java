@@ -2,6 +2,9 @@ package org.itstack.demo.design;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author My
+ */
 public interface CacheService {
 
     String get(final String key, int redisType);
