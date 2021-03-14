@@ -15,6 +15,7 @@ public class GoodsCommodityService implements ICommodity {
 
     private GoodsService goodsService = new GoodsService();
 
+    @Override
     public void sendCommodity(String uId, String commodityId, String bizId, Map<String, String> extMap) throws Exception {
         DeliverReq deliverReq = new DeliverReq();
         deliverReq.setUserName(queryUserName(uId));
@@ -27,10 +28,12 @@ public class GoodsCommodityService implements ICommodity {
 
         Boolean isSuccess = goodsService.deliverGoods(deliverReq);
 
-        logger.info("请求参数[优惠券] => uId：{} commodityId：{} bizId：{} extMap：{}", uId, commodityId, bizId, JSON.toJSON(extMap));
-        logger.info("测试结果[优惠券]：{}", isSuccess);
+        logger.info("请求参数[实物商品] => uId：{} commodityId：{} bizId：{} extMap：{}", uId, commodityId, bizId, JSON.toJSON(extMap));
+        logger.info("测试结果[实物商品]：{}", isSuccess);
 
-        if (!isSuccess) throw new RuntimeException("实物商品发放失败");
+        if (!isSuccess) {
+            throw new RuntimeException("实物商品发放失败");
+        }
     }
 
     private String queryUserName(String uId) {

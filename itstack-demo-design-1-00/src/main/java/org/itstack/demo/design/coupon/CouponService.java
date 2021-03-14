@@ -2,6 +2,7 @@ package org.itstack.demo.design.coupon;
 
 /**
  * 模拟优惠券服务
+ * @author My
  */
 public class CouponService {
 
