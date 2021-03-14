@@ -18,6 +18,7 @@ public class ShanDongCuisine implements ICuisine {
         this.cook = cook;
     }
 
+    @Override
     public void cook() {
         cook.doCooking();
     }

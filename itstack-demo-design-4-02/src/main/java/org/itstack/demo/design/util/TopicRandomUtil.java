@@ -14,7 +14,7 @@ public class TopicRandomUtil {
         Set<String> keySet = option.keySet();
         ArrayList<String> keyList = new ArrayList<String>(keySet);
         Collections.shuffle(keyList);
-        HashMap<String, String> optionNew = new HashMap<String, String>();
+        HashMap<String, String> optionNew = new HashMap<>();
         int idx = 0;
         String keyNew = "";
         for (String next : keySet) {

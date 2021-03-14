@@ -45,7 +45,7 @@ public class ApiTest {
 
     @Test
     public void test_(){
-        Map<String,String> map = new HashMap<String, String>();
+        Map<String,String> map = new HashMap<>();
         map.put("Mary","1243ew");
         map.put("Anna","fds32");
         map.put("Bom","dfre23");
@@ -57,7 +57,7 @@ public class ApiTest {
             System.out.println(k.hashCode());
         }
 
-        Map<String,String> map2 = new HashMap<String, String>();
+        Map<String,String> map2 = new HashMap<>();
         map2.put("A","1243ew");
         map2.put("B","fds32");
         map2.put("C","dfre23");

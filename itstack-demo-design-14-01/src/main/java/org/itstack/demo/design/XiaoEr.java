@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class XiaoEr {
 
-    private Logger logger = LoggerFactory.getLogger(XiaoEr.class);
+    private final Logger logger = LoggerFactory.getLogger(XiaoEr.class);
 
     private Map<Integer, String> cuisineMap = new ConcurrentHashMap<Integer, String>();
 

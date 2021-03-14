@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 public class PayController {
 
-    private Logger logger = LoggerFactory.getLogger(PayController.class);
+    private final Logger logger = LoggerFactory.getLogger(PayController.class);
 
     public boolean doPay(String uId, String tradeId, BigDecimal amount, int channelType, int modeType) {
         // 微信支付

@@ -20,7 +20,7 @@ import java.util.Map;
  */
 public class ApiTest {
 
-    private Logger logger = LoggerFactory.getLogger(ApiTest.class);
+    private final Logger logger = LoggerFactory.getLogger(ApiTest.class);
 
     @Test
     public void test_zj() {
@@ -34,7 +34,7 @@ public class ApiTest {
     public void test_mj() {
         // 满100减10，商品100元
         Context<Map<String,String>> context = new Context<Map<String,String>>(new MJCouponDiscount());
-        Map<String,String> mapReq = new HashMap<String, String>();
+        Map<String,String> mapReq = new HashMap<>();
         mapReq.put("x","100");
         mapReq.put("n","10");
         BigDecimal discountAmount = context.discountAmount(mapReq, new BigDecimal(100));

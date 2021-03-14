@@ -18,7 +18,7 @@ import java.util.Map;
  */
 public abstract class EngineBase extends EngineConfig implements IEngine {
 
-    private Logger logger = LoggerFactory.getLogger(EngineBase.class);
+    private final Logger logger = LoggerFactory.getLogger(EngineBase.class);
 
     @Override
     public abstract EngineResult process(Long treeId, String userId, TreeRich treeRich, Map<String, String> decisionMatter);

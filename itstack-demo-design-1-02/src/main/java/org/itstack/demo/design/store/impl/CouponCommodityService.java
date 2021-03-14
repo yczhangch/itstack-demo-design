@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class CouponCommodityService implements ICommodity {
 
-    private Logger logger = LoggerFactory.getLogger(CouponCommodityService.class);
+    private final Logger logger = LoggerFactory.getLogger(CouponCommodityService.class);
 
     private CouponService couponService = new CouponService();
 

@@ -1,6 +1,5 @@
 package org.itstack.demo.design;
 
-import com.alibaba.fastjson.JSON;
 import org.itstack.demo.design.cuisine.ICuisine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,12 +13,13 @@ import java.util.List;
  * Create by 小傅哥(fustack) @2020
  * <p>
  * 饭店小二，负责点单
+ * @author My
  */
 public class XiaoEr {
 
-    private Logger logger = LoggerFactory.getLogger(XiaoEr.class);
+    private final Logger logger = LoggerFactory.getLogger(XiaoEr.class);
 
-    private List<ICuisine> cuisineList = new ArrayList<ICuisine>();
+    private final List<ICuisine> cuisineList = new ArrayList<>();
 
     public void order(ICuisine cuisine) {
         cuisineList.add(cuisine);

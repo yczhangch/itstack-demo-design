@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 // 校长
 public class Principal implements Visitor {
 
-    private Logger logger = LoggerFactory.getLogger(Principal.class);
+    private final Logger logger = LoggerFactory.getLogger(Principal.class);
 
     public void visit(Student student) {
         logger.info("学生信息 姓名：{} 班级：{}", student.name, student.clazz);

@@ -18,6 +18,7 @@ public class SiChuanCuisine implements ICuisine {
         this.cook = cook;
     }
 
+    @Override
     public void cook() {
         cook.doCooking();
     }

@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class LotteryServiceImpl implements LotteryService {
 
-    private Logger logger = LoggerFactory.getLogger(LotteryServiceImpl.class);
+    private final Logger logger = LoggerFactory.getLogger(LotteryServiceImpl.class);
 
     private MinibusTargetService minibusTargetService = new MinibusTargetService();
 

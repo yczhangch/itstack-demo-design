@@ -9,7 +9,7 @@ import java.lang.reflect.Proxy;
 
 public class MapperFactoryBean<T> implements FactoryBean<T> {
 
-    private Logger logger = LoggerFactory.getLogger(MapperFactoryBean.class);
+    private final Logger logger = LoggerFactory.getLogger(MapperFactoryBean.class);
 
     private Class<T> mapperInterface;
 

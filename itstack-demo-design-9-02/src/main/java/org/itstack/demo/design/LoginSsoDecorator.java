@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class LoginSsoDecorator extends SsoDecorator {
 
-    private Logger logger = LoggerFactory.getLogger(LoginSsoDecorator.class);
+    private final Logger logger = LoggerFactory.getLogger(LoginSsoDecorator.class);
 
     private static Map<String, String> authMap = new ConcurrentHashMap<String, String>();
 

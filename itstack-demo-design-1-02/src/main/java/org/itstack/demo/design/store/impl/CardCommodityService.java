@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class CardCommodityService implements ICommodity {
 
-    private Logger logger = LoggerFactory.getLogger(CardCommodityService.class);
+    private final Logger logger = LoggerFactory.getLogger(CardCommodityService.class);
 
     // 模拟注入
     private IQiYiCardService iQiYiCardService = new IQiYiCardService();

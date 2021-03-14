@@ -31,7 +31,7 @@ public class ApiTest {
         create_account.setAccountDate(parse);
         create_account.setDesc("在校开户");
 
-        HashMap<String, String> link01 = new HashMap<String, String>();
+        HashMap<String, String> link01 = new HashMap<>();
         link01.put("userId", "number");
         link01.put("bizId", "number");
         link01.put("bizTime", "accountDate");
@@ -48,7 +48,7 @@ public class ApiTest {
         orderMq.setOrderId("100000890193847111");
         orderMq.setCreateOrderTime(parse);
 
-        HashMap<String, String> link02 = new HashMap<String, String>();
+        HashMap<String, String> link02 = new HashMap<>();
         link02.put("userId", "uid");
         link02.put("bizId", "orderId");
         link02.put("bizTime", "createOrderTime");

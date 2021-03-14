@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 public class ApiTest {
 
-    private Logger logger = LoggerFactory.getLogger(ApiTest.class);
+    private final Logger logger = LoggerFactory.getLogger(ApiTest.class);
 
     @Test
     public void test_awardToUser() {
@@ -38,7 +38,7 @@ public class ApiTest {
         req02.setAwardType(2);
         req02.setAwardNumber("9820198721311");
         req02.setBizId("1023000020112221113");
-        req02.setExtMap(new HashMap<String, String>() {{
+        req02.setExtMap(new HashMap<>() {{
             put("consigneeUserName", "谢飞机");
             put("consigneeUserPhone", "15200292123");
             put("consigneeUserAddress", "吉林省.长春市.双阳区.XX街道.檀溪苑小区.#18-2109");

@@ -28,7 +28,7 @@ import java.lang.reflect.Method;
 @Component
 public class DoJoinPoint {
 
-    private Logger logger = LoggerFactory.getLogger(DoJoinPoint.class);
+    private final Logger logger = LoggerFactory.getLogger(DoJoinPoint.class);
 
     @Autowired
     private StarterService starterService;

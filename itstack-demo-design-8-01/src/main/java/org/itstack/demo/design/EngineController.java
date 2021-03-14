@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class EngineController {
 
-    private Logger logger = LoggerFactory.getLogger(EngineController.class);
+    private final Logger logger = LoggerFactory.getLogger(EngineController.class);
 
     public String process(final String userId, final String userSex, final int userAge) {
 

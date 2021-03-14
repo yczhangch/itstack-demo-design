@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 
 public class MessageEventListener implements EventListener {
 
-    private Logger logger = LoggerFactory.getLogger(MessageEventListener.class);
+    private final Logger logger = LoggerFactory.getLogger(MessageEventListener.class);
 
     @Override
     public void doEvent(LotteryResult result) {
