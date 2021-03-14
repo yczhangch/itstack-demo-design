@@ -1,5 +1,8 @@
 package org.itstack.demo.design.lang;
 
+/**
+ * @author My
+ */
 public interface Collection<E, L> extends Iterable<E> {
 
     boolean add(E e);
@@ -10,6 +13,7 @@ public interface Collection<E, L> extends Iterable<E> {
 
     boolean removeLink(String key);
 
+    @Override
     Iterator<E> iterator();
 
 }

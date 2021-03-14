@@ -6,11 +6,11 @@ import java.sql.*;
 import java.util.Date;
 import java.util.*;
 
-
 /**
  * 公众号 | bugstack虫洞栈
  * 博 客 | https://bugstack.cn
- * Create by 小傅哥 @2020
+ *
+ * @author 小傅哥 @2020
  */
 public class DefaultSqlSession implements SqlSession {
 

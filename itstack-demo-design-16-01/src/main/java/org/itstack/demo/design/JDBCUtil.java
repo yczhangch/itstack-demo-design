@@ -1,6 +1,5 @@
 package org.itstack.demo.design;
 
-import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,6 +8,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/**
+ * @author My
+ */
 public class JDBCUtil {
 
     private static Logger logger = LoggerFactory.getLogger(JDBCUtil.class);
@@ -27,7 +29,7 @@ public class JDBCUtil {
         ResultSet resultSet = stmt.executeQuery("SELECT id, name, age, createTime, updateTime FROM user");
         //如果有数据，rs.next()返回true
         while (resultSet.next()) {
-            logger.info("测试结果 姓名：{} 年龄：{}", resultSet.getString("name"),resultSet.getInt("age"));
+            logger.info("测试结果 姓名：{} 年龄：{}" , resultSet.getString("name"), resultSet.getInt("age"));
         }
     }
 

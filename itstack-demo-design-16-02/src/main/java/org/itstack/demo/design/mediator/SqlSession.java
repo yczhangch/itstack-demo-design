@@ -3,9 +3,10 @@ package org.itstack.demo.design.mediator;
 import java.util.List;
 
 /**
+ * 对数据库操作的查询接口
  * 公众号 | bugstack虫洞栈
  * 博 客 | https://bugstack.cn
- * Create by 小傅哥 @2020
+ * @author 小傅哥 @2020
  */
 public interface SqlSession {
 

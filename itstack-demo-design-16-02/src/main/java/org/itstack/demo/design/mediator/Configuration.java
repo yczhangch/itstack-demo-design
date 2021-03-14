@@ -3,11 +3,10 @@ package org.itstack.demo.design.mediator;
 import java.sql.Connection;
 import java.util.Map;
 
-
 /**
  * 公众号 | bugstack虫洞栈
  * 博 客 | https://bugstack.cn
- * Create by 小傅哥 @2020
+ * @author 小傅哥 @2020
  */
 public class Configuration {
 
